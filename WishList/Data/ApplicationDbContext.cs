@@ -9,6 +9,6 @@ namespace WishList.Data
         {
 
         }
-        public DbSet<Item> Items { get; set; }
+        public DbSet<Models.Item> Items { get; set; }
     }
 }
