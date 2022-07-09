@@ -37,7 +37,7 @@ namespace WishList.Controllers
            var item =  _context.Items.FirstOrDefault(e =>e.Id == Id);
             _context.Items.Remove(item);
             _context.SaveChanges();
-            return RedirectToAction("Index");
+            return RedirectToAction("Index","Item");
         }
     }
 }
