@@ -34,8 +34,8 @@ namespace WishList.Controllers
 
         public IActionResult Delete(int Id)
         {
-           var entity =  _context.Items.FirstOrDefault(e =>e.Id == Id);
-            _context.Items.Remove(entity);
+           var item =  _context.Items.FirstOrDefault(e =>e.Id == Id);
+            _context.Items.Remove(item);
             _context.SaveChanges();
             return RedirectToAction("Index");
         }
